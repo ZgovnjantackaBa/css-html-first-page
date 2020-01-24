@@ -1,0 +1,485 @@
+html{
+	scroll-behavior:smooth;
+}
+
+body {
+margin: 0px;
+padding: 0px;	
+font-family: Calibri, sams-serif;
+}
+
+.header {
+	border-bottom: 2px solid #dc0101;
+	background-color:#eeeeee;
+
+}
+
+.page {
+
+
+
+	
+}
+
+.column {
+	/* border: 1px solid black; */
+	width: 1000px;
+	margin: 0px auto;
+
+}
+
+.page .column {
+	height: 100vh;
+
+}
+
+#logo-i-social {
+	display: flex;
+	
+}
+
+#logo-holder {
+	flex-grow: 1;
+	
+}
+#logo-holder img{
+	width:165px;
+	height:32px;
+	
+}
+
+#social-holder {
+	flex-grow: 1;
+	text-align: right;
+	
+}
+#social-holder a img{
+	margin: 5px;
+	width: 24px;
+	height: 24px;
+	
+}
+
+#main-menu {
+	display: flex;
+	
+}
+
+#main-menu a {
+	flex-grow: 1;
+	text-align: center;
+	display: block;
+	padding: 10px 0px;
+	text-decoration: none;
+	color: #dc0101;
+	transition: 300ms;
+	
+}   
+
+#main-menu a:hover,
+#main-menu a.active {
+	color: #ffffff;
+	background-color: #dc0101;
+	
+}
+
+#pocetna {
+	text-align: center;
+	color: #ffffff;
+	background-image: url("assets/img/backgrounds/bg08.jpg");
+	/*background-size: 100% 100%;*/
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+
+#pocetna h1 {
+	font-size: 48px;
+	margin-top: 0px;
+	padding-top: calc(50vh - 250px) ;
+	color: #FFFFFF;
+	
+}
+
+.dark-box {
+	border: 1px solid #ffffff;
+	background-color: #99999950;
+	font-size: 24px;
+	padding: 30px;
+	
+}
+
+#usluge {
+	background-image: url("assets/img/backgrounds/bg06.jpg");
+	background-size: cover; 
+	background-attachment: fixed;
+}
+
+#karijera {
+
+	background-image: url("assets/img/backgrounds/bg07.jpg");
+	background-size: cover; 
+	background-attachment: fixed;
+}
+
+.align-center {
+	text-align: center;
+	
+	
+}
+
+.krugovi {
+	display: flex;
+	margin: 35px 0px;
+	
+}
+
+.krug-holder {
+	flex-grow: 1;
+
+}
+
+.krug {
+	background-color: #dc0101;
+	color: #ffffff;
+	font-size: 48px;
+	/* width:200px;
+	height:200px;*/
+	padding: 25%;
+	display:inline-block;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	font-weight: bold;
+		
+}
+
+.oznaka {
+	font-size:24px;
+	font-weight: bold;
+	margin-top: 10px;
+	
+}
+
+.tehnologije {
+	display: flex;
+	margin: 35px 0px;
+	
+}
+.tehnologija {
+	flex-grow: 1;
+	text-align: center;
+
+}
+
+.tehnologija img {
+	width:48px;
+	height:48px;
+	margin-top:25px;
+	
+	
+}
+.tehnologija p {
+	font-weight: bold;
+}
+
+.column h2{
+	font-weight:bold;
+	margin-top:80px;
+	margin-bottom: 40px;
+	font-size: 32px;
+}
+
+#usluge h2 {
+	padding-top: 70px;
+	
+}
+
+#usluge {
+	color: #ffffff;
+	margin-bottom:40px;
+}
+
+.service-row {
+	display: flex;
+	margin-bottom: 40px;
+	justify-content: space-between;
+}
+
+.slika {
+	text-align: center;
+	position: relative;
+	width:300px;
+	height:150px;
+	border: 1px solid white;
+}
+
+.slika img {
+	width:300px;
+	height:150px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+}
+
+.slika p {
+	right: 0px;
+	left:0px;
+	bottom:0px;
+	background-color:#ffffffa2;
+	color: black;
+	padding: 10px;
+	position: absolute;
+	margin-bottom: 0px;
+	font-weight: bold;
+	border-top: white;
+	
+}
+
+#margina {
+	margin-top: 150px;
+	margin-bottom: 50px;
+}
+
+#proizvodi h2 {
+	padding-top: 50px;
+	
+	
+}
+
+.matrica {
+	margin-top: 40px;
+	height: 500px;
+	display: grid;
+	grid-template: "a b c"
+				   "d b e"
+				   "f f g";
+	align-content: space-between;
+	justify-content: space-between;
+}
+
+#proizvod-a {
+	grid-area:a;
+}
+#proizvod-b {
+	grid-area:b;
+}
+#proizvod-c {
+	grid-area:c;
+}
+#proizvod-d {
+	grid-area:d;
+}
+#proizvod-e {
+	grid-area:e;
+}
+#proizvod-f {
+	grid-area:f;
+}
+#proizvod-g {
+	grid-area:g;
+}
+
+.proizvod {
+	display: grid;
+	grid-template:"region";
+	align-content: stretch;
+	justify-content: stretch;
+}
+
+.proizvod img {
+	width:300px;
+	height:150px;
+	grid-area: region;
+	align-self: stretch;
+	justify-self: stretch;
+	border: 1px solid orange;
+	
+}
+
+.proizvod .text-holder {
+	grid-area: region;
+	align-self: stretch;
+	justify-self: stretch;
+	display: grid;
+	align-content: center;
+	justify-content: center;
+	font-size: 20px;
+	font-weight: bold;
+	background-color: #dc0101DD;
+	color: #fff;
+	opacity: 0.0;
+	
+}
+
+#proizvod-f img {
+	width:650px;
+	align-self: stretch;
+	justify-self: stretch;
+}
+
+#proizvod-b img {
+	height:325px;
+	align-self: stretch;
+	justify-self: stretch;
+	
+	
+}
+
+.proizvod:hover .text-holder {
+opacity: 1.0;
+transition: 500ms;
+}
+
+#karijera h2 {
+	padding-top: 50px;
+	text-align: center;
+}
+
+.career-columns {
+	display:flex;
+	
+}
+
+.job-list {
+	flex-grow:1;
+	flex-basis:0;
+}
+
+.job-descriptions {
+	flex-grow: 2;
+	flex-basis:0;
+}
+
+.job-list label {
+	display: block;
+	margin-bottom: 10px;
+	padding: 5px;
+	background-color: #ffffffC0;
+	border: 1px solid #ffffff;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.job-descriptions input {
+	display: none;
+}
+
+.job-descriptions .job-description {
+	display: none;
+}
+
+.job-descriptions input:checked+.job-description {
+	display: block;
+	
+}
+h3 {
+	text-align:center;
+	font-size: 20px;
+}
+.job-description {
+	margin-left: 10px;
+	padding: 5px;
+	background-color: #ffffffC0;
+	border: 1px solid #ffffff;
+	font-size: 20px;
+	
+}
+
+#kontakt h2 {
+	margin:80px;
+	margin-bottom:40px;
+	text-align:center;
+}
+
+.kontakt-region {
+	display: grid;
+	grid-template: "adrese mapa"
+				  "mailovi mapa";
+	grid-template-columns: 300px 1fr;
+}
+
+.kontakt-adrese {
+	grid-area: adrese;
+	padding-bottom:15px;
+	font-size:14px;
+}
+
+.kontakt-mailovi {
+	grid-area: mailovi;
+	font-size:14px;
+}
+
+.kontakt-mapa {
+	grid-area: mapa;
+}
+ 
+.kontakt-mailovi a{
+	color:#dc0101;
+	text-decoration:none;
+}
+
+.kontakt-mailovi a:hover{
+	text-decoration:underline;
+	font-weight:bold;
+}
+
+.footer {
+	border: 3px solid #dc0101;
+	background-color:#eeeeee;
+	padding-top:20px;
+	padding-bottom:50px;
+}
+.footer > .column {
+	display:flex;
+	height:30px;
+	font-size:14px;
+}
+.footer .footer-column{
+	flex-grow:1;
+	flex-basis:0;
+}
+
+.align-left {
+	text-align:left;
+}
+
+.align-right {
+	text-align:right;
+}
+
+.red-link{
+	text-decoration:none;
+	color:#dc0101;
+}
+
+.red-link:hover{
+	text-decoration:underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
